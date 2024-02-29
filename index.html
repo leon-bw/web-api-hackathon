@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mario Quiz</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+    <script src="./scripts/cache.js"></script>
+    <script src="./scripts/script.js" defer></script>
+</head>
+<body>
+    
+    <header></header>
+    <main>
+        <section class="quiz">
+            <div class="quiz__container">
+                <article class="quiz__body">
+                    <h1 class="quiz__title">Mario will collect the coin for each correct answer!</h1>
+                    <p class="quiz__score">Score:<span class="quiz__points"> 0</span></p>
+                    <p class="quiz__question"></p>
+                    <form class="quiz__answers">
+                        <button class="quiz__correct"></button>
+                        <button class="quiz__incorrect--a"></button>
+                        <button class="quiz__incorrect--b"></button>
+                        <button class="quiz__incorrect--c"></button>
+                    </form>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="game">
+        <div class="game__scene">
+        <img class="game__coin" src="./assets/images/Mario coin.gif" alt="mario coin">
+        <img class="game__mario" src="./assets/images/Mario Gif - IceGif.gif" alt="mario running">
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,46 @@
+@use "./base/typography" as *;
+
+.quiz {
+
+    background-image: url(/assets/images/Mario\ background.png);
+    background-position: center;
+    background-size: cover;
+
+    &__container {
+        max-width: 30rem;
+        margin: 0 auto;
+    }
+
+    &__question {
+        font-size: 1.5rem;
+    }
+
+    &__answers {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__score {
+        text-align: center;
+
+        span {
+            font-family: "Kode Mono";
+            font-size: 3rem;
+        }
+    }
+
+    button {
+        background-color: #ffd323;
+        color: black;
+        border: 2px solid #e5b94a;
+        border-radius: 5px;
+        padding: .5rem;
+        margin: .5rem 0;
+        font-weight: 600;
+
+        &:hover {
+            cursor: pointer;
+            background-color: #e5b94a;
+        }
+    }
+}
